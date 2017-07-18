@@ -15,12 +15,16 @@
 <html>
 <body>
 
-<h1>My First Google Map</h1>
-<button type="button" id="button">New Place</button>
+<h1 id="maptitle">Random Google Map</h1>
+<button id="button">New Map</button>
 
 <div id="googleMap"></div>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnSDzlWXgQqfReYkhN8_gvlGbrseTmA60&callback=myMap"></script>
-
+<script>
+document.getElementById("button").addEventListener("click", function(){
+    location.reload();
+});
+</script>
 </body>
 </html>
